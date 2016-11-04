@@ -12,14 +12,17 @@
         alert('ini Alert');
 </script>
 
-    <button onclick="Alert('Alert in click button')">Click Alert </button>
+    <button onclick="alert('Alert in click button')">Click Alert </button>
 
      <button onclick="alert_custom()">Click function Event</button>
-    <script type="text/javascript">>
+    <script type="text/javascript">
     function alert_custom(){
             alert('Alert dari function');
             if(confirm('show again?')){
                 alert_custom();
+                
+            }else{
+                alert('selesai');
             }
         }
     
